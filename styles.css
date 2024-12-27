@@ -1,0 +1,226 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #0a649f;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #323030;
+    color: #887e7e;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Home Section */
+#home {
+    padding: 100px 20px;
+    background-image: url('/Users/gurudarshan/Downloads/WEBDATA/code/WEBSITE/images/home-banner.jpg'); /* Replace with your image path */
+    background-size: cover;  /* Ensures the image covers the entire section */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents repeating the image */
+    text-align: center;  /* Centers the text horizontally */
+    color: white;  /* Changes the text color to white for contrast */
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #0a4ce6;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+}
+
+.cta-button:hover {
+    background-color: #e76f51;
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordion-item {
+    border: 1px solid #5fb4a4;
+    border-radius: 8px;
+    background-color: #85212100;
+    padding: 10px;
+}
+
+.accordion-content img,
+.accordion-item img {
+    display: block;           /* Makes the image a block element */
+    margin-left: auto;        /* Centers the image horizontally */
+    margin-right: auto;       /* Centers the image horizontally */
+    max-width: 100%;          /* Ensures the image scales responsively */
+    height: auto;             /* Maintains the aspect ratio */
+}
+
+.accordion-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #d1d1d1;
+}
+
+.accordion-item p {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Make inputs and button stretch across the form */
+    gap: 1px;  /* Increased gap to separate form elements nicely */
+    max-width: 500px;  /* Slightly larger max-width for a more typical form size */
+    margin: 0 auto;    /* Centers the form */
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;  /* Aligns labels to the left */
+    margin-bottom: 1px; /* Adds a small space between label and input */
+}
+
+form input, form textarea {
+    width: 100%;        /* Ensures input fields take up the full form width */
+    max-width: 100%;     /* Ensures input fields fill their container width */
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button {
+    background-color: #f4a261;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;  /* Button now stretches to fill the form width */
+}
+
+form button:hover {
+    background-color: #e76f51;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    form input, form textarea {
+        width: 90%;   /* Makes form elements take up more space on smaller screens */
+    }
+
+    form button {
+        width: 90%;   /* Same for button */
+    }
+}
