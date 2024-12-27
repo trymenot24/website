@@ -42,7 +42,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
     padding: 100px 20px;
-    background-image: url('/Users/gurudarshan/Downloads/WEBDATA/code/WEBSITE/images/home-banner.jpg'); /* Replace with your image path */
+    background-image: url('https://github.com/trymenot24/website/blob/7bee776d649d16638c88b7489be6ee9442919b52/images/home-banner.jpg'); /* Replace with your image path */
     background-size: cover;  /* Ensures the image covers the entire section */
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;  /* Prevents repeating the image */
