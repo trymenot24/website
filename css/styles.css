@@ -42,7 +42,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
     padding: 100px 20px;
-    background-image: url('website/images/home-banner.jpg'); /* Replace with your image path */
+    background-image: url('/website/images/home-banner.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
